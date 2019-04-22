@@ -7,3 +7,5 @@ def index(request):
     return HttpResponse("Yeah, It is my first app and it is Working.")
 
 # Create your views here.
+def post_list(request):
+    return render(request, 'chat_app/templates/post.html', {})
