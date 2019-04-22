@@ -8,4 +8,4 @@ def index(request):
 
 # Create your views here.
 def post_list(request):
-    return render(request, 'chat_app/templates/post.html', {})
+    return render(request, 'post.html')
