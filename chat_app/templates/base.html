@@ -27,18 +27,18 @@
             <span></span>
             <span></span>
         </button>
-                <a href="{% url 'chatdemo:home_page' %}">Django Chat</a>
+                
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div>
                 <ul>
                     {% if user.is_authenticated %}
-                        <li><a href="{% url 'chatdemo:profile' %}">Profile</a></li>
-                        <li><a href="{% url 'chatdemo:logout' %}">Logout</a></li>
+                        <li>Profile</li>
+                        <li>Logout</li>
                     {% else %}
-                        <li><a href="{% url 'chatdemo:login' %}">Login</a></li>
-                        <li><a href="{% url 'chatdemo:register' %}">Signup</a></li>
+                        <li>Login</li>
+                        <li>Signup</li>
                     {% endif %}
                 </ul>
             </div>
