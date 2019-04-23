@@ -6,3 +6,5 @@ class Post(models.Model):
     password = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     message=models.TextField()
+    def __str__(self):
+        return self.user_name
