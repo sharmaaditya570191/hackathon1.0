@@ -19,4 +19,5 @@ from chat_app import views
 urlpatterns = [
     path('', views.index, name='index'),
     path('', include('chat_app.urls')),
+    path('admin/', admin.site.urls),
     ]
